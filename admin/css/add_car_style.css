@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'pop-regular';
+    src: url('../../font/Poppins-Regular.ttf');
+}
+*{
+    /* margin: 25%; */
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'pop-regular';
+    
+}
+
+body{
+   
+    display: flex;
+    height:auto;
+    width:auto;
+
+}
+
+.container{
+    
+    width: 100%;
+    background:#f1eeee;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    /* padding: 25px 30px; */
+    border-radius: 5px;
+}
+
+.container .title{
+    margin-left: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+content: "";
+position: absolute;
+left: 0px;
+bottom: 0px;
+height: 5px;
+width: 130px;
+background: linear-gradient(135deg,#f94449,#c30010);
+}
+
+.container form .car_details{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ /* margin: 20px 0 12px 0; */
+}
+
+form .car_details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .car_details .up-img{
+   margin-left: 35px;
+}
+
+.car_details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.car_details .fual-type .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.accessories .select-box .details{
+    
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.car_details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.car_details .input-box input:focus,
+.mil input:focus,
+.car_details .input-box input:valid{
+
+border-color:#d1001f;
+}
+
+
+#door,#fual,#fual-tank,#break,#engine,#engine-power,#brand{
+    margin-bottom: 27px;
+    text-align: left;
+    font-size: 22px;
+    width: 200px;
+    border-radius: 4px;
+    height: 43px;
+    border: 1px solid #d1001f;
+}
+
+#mil{
+    border: 1px solid #d1001f;
+}
+
+.fual-type{
+    margin-right: 150px;
+}
+
+/* form .button{
+    height: 45px;
+    width: 95%;
+    margin-left: 16px;
+} */
+
+form .btn{
+    width: 95%;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    background:#d23d49;
+    border-radius: 5px;
+    margin-left: 27px;
+    margin-bottom: 25px;
+   
+}
+
+/* label{
+    height: 100px;
+    width: 150px;
+    border-radius: 6px;
+    border: 1px dashed #999;
+    margin-right: 145px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+label:hover{
+    border-color: #d1001f;
+    border: 1px dashed ;
+} */
+
+form .accessories{
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top: 25px;    
+    margin-left: 20px;
+}
+form .accessories .select-box{
+    width: calc(100% / 2 - 20px);
+}
+
+form .mil{
+    display:flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mil .mi-de{
+    margin-top: 5px;
+    font-size: 20px;
+}
+form .mil input{
+
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    margin-bottom: 22px;
+}
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+
+    form .car_details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .car_details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .car_details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+.up-img-txt{
+    margin-top: 0px;;
+    margin-right: 80%;
+    
+    
+}
+.bi-txt{
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+form{
+    width: auto;
+    background-color: white;
+}
+
+/* for accessories */
+
+.container1 {
+    max-width: 1000px;
+    margin: 8px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accessories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* .save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+} */
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}

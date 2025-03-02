@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'pop-regular';
+    src: url('../font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'pop-bold';
+    src: url('../font/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'pop-light';
+    src: url('../font/Poppins-Light.ttf');
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   
+    
+    
+}
+
+body{
+    /*background-color: #48d1cc;*/
+    /* font-family: Arial, sans-serif; */
+    font-size: 62.5%;
+    width: 100%;
+    font-family: 'pop-regular';
+    
+   
+}
+
+main{
+    background-color: #b1d7d6;
+    max-width: 1500px;
+    width: 100%;
+    margin: 30% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+main .card{
+    max-width: 314px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 640px;
+    /*border: 1.5px solid black;*/
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main .card .image{
+    height: 50%;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+main .card .image img{
+    width: 99%;
+    height: 100%;
+    object-fit:fill;
+    border-radius: 10px;
+    margin: 7px 0px;
+    transition: transform 0.8s;
+}
+img:hover{
+    transform: scale();
+}
+
+main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 2em;
+    height: 25%;
+    font-weight: bold;
+    color: black;
+    
+}
+.badge {
+    background-color: #f19898;
+    color: #ff4d4d;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+
+/*.card:hover{
+    background-color: #f63a40;
+    transition: 0.6s all;
+}*/
+
+
+#rate{
+    color: gold;
+    margin-right: 3px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#car_name{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.content{
+    font-size: 15px;
+    color: #2a2424;
+}
+.rate{
+    font-size: 20px;
+}
+.hr{
+    margin-right: 5px;
+}
+
+.seat{
+    font-size: 17px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    color: #2a2424;;
+}
+
+.price{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 13px;
+    color:  #2a2424;;
+}
+
+.fual{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #2a2424;;
+}
+
+
+main .card a{
+    font-size: 23px;
+    color: black;
+    width: 50%;
+}
+
+
+main .card button{
+    border: 1px solid black;
+    font-size: 23px;
+    width: 95%;
+    cursor: pointer;
+    margin-top: 95px;
+    /* font-weight: bold; */
+    position: relative;
+    margin-left: 1px;
+    /* background-color:rgb(199, 46, 46); */
+    border-radius: 4px;
+    font-family:Lucida Sans Unicode;
+    margin-bottom: 10px;
+    color: rgb(22, 20, 21);
+    
+}
+
+.add{
+    background-color: #fff;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+
+.header h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.header button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+/*.header button:hover {
+    background-color: #e0e0e0;
+}*/
+#header{
+    margin-top: 60px;
+    background-color: #b1d7d6;
+    width: 100%;
+}
